@@ -14,8 +14,9 @@ function appendToDisplay(value) {
 }
 
 function calcPercent() {
-    
-
+    let number = parseFloat(displayValue);
+    number = (number/100).toFixed(2);
+    displayValue = number.toString();
     updateDisplay();
 }
 

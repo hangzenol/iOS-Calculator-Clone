@@ -47,6 +47,8 @@ button {
 
 #zero {
     grid-column: span 2;
+    text-align: left;
+    padding-left: 25px;
     border-radius: 35%;
 }
 
