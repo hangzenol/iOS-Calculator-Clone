@@ -13,6 +13,14 @@ function appendToDisplay(value) {
     updateDisplay();
 }
 
+function negateNum() {
+    let number = parseFloat(displayValue);
+    number = number * -1;
+    displayValue = number.toString();
+
+    updateDisplay();
+}
+
 function calcPercent() {
     let number = parseFloat(displayValue);
     number = (number/100).toFixed(2);
