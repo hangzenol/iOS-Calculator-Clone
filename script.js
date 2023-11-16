@@ -45,7 +45,7 @@ function calculateResult() {
     try {
         displayValue = eval(displayValue).toString();
     } catch (error) {
-        displayValue = 'Error';
+        displayValue = '0';
     }
     updateDisplay();
 }
