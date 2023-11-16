@@ -1,6 +1,8 @@
 let displayValue = '0';
+let saveNum;
 
 function updateDisplay() {
+    saveNum = parseFloat(displayValue);
     document.getElementById('display').innerText = displayValue;
 }
 
@@ -23,7 +25,13 @@ function negateNum() {
 
 function calcPercent() {
     let number = parseFloat(displayValue);
-    number = (number/100).toFixed(2);
+
+    if (number === 0) {
+        displayValue = number.toString();
+    } else {
+        number = (number/100).toFixed(2);
+    }
+
     displayValue = number.toString();
     updateDisplay();
 }
