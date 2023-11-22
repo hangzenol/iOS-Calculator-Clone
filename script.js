@@ -30,9 +30,10 @@ function calcPercent() {
         displayValue = number.toString();
     } else {
         number = (number/100).toFixed(2);
+        saveNum = number;
+        displayValue = number.toString();
     }
 
-    displayValue = number.toString();
     updateDisplay();
 }
 
